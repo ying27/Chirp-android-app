@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_pressed="true" android:drawable="@drawable/add_background_dark" />
+            <item android:drawable="@drawable/add_background" />
+        </selector>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/ic_add_white_24dp" android:gravity="center" />
+    </item>
+</layer-list>

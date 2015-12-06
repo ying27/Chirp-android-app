@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kiui.words.activities.SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/act_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/action_bar">
+
+        <ImageView
+            android:id="@+id/action_bar_cancel"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_actionbar_back_arrow"
+            android:layout_marginLeft="11dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="16dp"
+            android:text="Select a file to import"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"/>
+
+        <!--
+        <ImageView
+            android:id="@+id/save_file"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_action_content_save"/>-->
+
+    </RelativeLayout>
+
+    <ListView
+        android:paddingTop="6dp"
+        android:layout_below="@+id/act_bar"
+        android:id="@+id/import_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"/>
+
+</RelativeLayout>

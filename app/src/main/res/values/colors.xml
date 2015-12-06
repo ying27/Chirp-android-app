@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bkg_tabbed">#26C6DA</color>
+    <color name="action_bar">#26C6DA</color>
+    <color name="action_bar_accent">#00ACC1</color>
+
+    <color name="text_accent">#00BCD4</color>
+    <color name="text_std">#26C6DA</color>
+    <color name="edittext_hint">#E0F7FA</color>
+    <color name="edittext_down_bar">#80DEEA</color>
+
+    <color name="cardview_grey">#E0F7FA</color>
+
+    <color name="score_button">#CDDC39</color>
+
+    <color name="add_button">#00BCD4</color>
+    <color name="add_button_dark">#00ACC1</color>
+</resources>

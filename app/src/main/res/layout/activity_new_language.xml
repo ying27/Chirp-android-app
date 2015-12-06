@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kiui.words.activities.NewLanguageActivity"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/action_bar">
+
+        <RelativeLayout
+            android:id="@+id/drawer_icon"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_actionbar_back_arrow"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+
+        <EditText
+            android:id="@+id/edit_text_bar"
+            android:hint="Insert language name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="40dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/edittext_hint"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:inputType="textFilter|textNoSuggestions"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/strip_words"
+        android:layout_below="@id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bkg_tabbed">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="WORDS"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/words_list"
+        android:layout_below="@+id/strip_words"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="4dp"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/blank_text"
+            android:textColor="@color/text_accent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blank panel"
+            android:visibility="gone"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/add_word"
+            android:visibility="gone"
+            android:textColor="@color/text_std"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap + to add a word"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/boton_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp">
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@+id/add_button"
+                android:background="@drawable/add_button"
+                android:elevation="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/boton_add"
+            android:orientation="horizontal"
+            android:id="@+id/undo_bar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#424242">
+
+            <TextView
+                android:padding="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="DELETED"
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical"/>
+
+            <View
+                android:layout_toLeftOf="@+id/undo"
+                android:layout_width="2dp"
+                android:layout_height="25dp"
+                android:background="#BDBDBD"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/undo"
+                android:padding="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="UNDO"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/text_accent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
